@@ -1,0 +1,50 @@
+// Home
+
+#masthead-wrapper {
+  @include outerRow();
+}
+
+.header-masthead {
+  @include column(12);
+}
+
+#main-navigation-base {
+  text-align: center;
+}
+
+#main-navigation-wrapper {
+  @include outerRow();
+}
+
+#main-navigation {
+  @include horizontal-centered-list(ul,li);
+}
+
+.devo-entry-wrapper {
+  padding: 40px 20px;
+  @include outerRow();
+}
+
+.devo-entry {
+  @include column(9);
+}
+
+.main-sidebar {
+  @include column(3);
+}
+
+.devo-detail-entry {
+  @include innerRow();
+  .header-devo-entry { 
+    @include column(9);
+  }
+  .author-info {
+    @include pull(3);
+  }
+  
+}
+
+#footer-wrapper {
+  padding: 20px 20px;
+  @include outerRow();
+}
